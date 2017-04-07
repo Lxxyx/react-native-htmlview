@@ -51,6 +51,6 @@ export default class AutoSizedImage extends React.Component {
       source = Object.assign(source, this.props.source, finalSize);
     }
 
-    return <Image style={style} source={source} />;
+    return <Image style={style} source={source} resizeMode="contain"/>;
   }
 }
